@@ -1,0 +1,69 @@
+.first
+  position: relative
+  padding-bottom: 60px
+  padding-top: 41px
+  &::after
+    position: absolute
+    content: ''
+    top: 0px
+    left: 0px
+    width: 100%
+    height: 100%
+    background-image: url('../images/bg/header-waves.svg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: -317px -35px
+    z-index: 0
+  &::before
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(28, 28, 28, 0.7)
+    z-index: 1
+  &__title
+    position: relative
+    z-index: 2
+    display: flex
+    flex-direction: column
+    margin-bottom: 67px
+    &-second
+      line-height: 1
+      align-self: flex-end
+      margin-top: -40px
+    &-subtitle
+      position: absolute
+      top: 175px
+      right: 0
+      @include inter
+      font-style: italic
+      letter-spacing: 0.05em
+  &__buttons
+    position: relative
+    z-index: 2
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    margin-bottom: 120px
+    &-btn
+      // display: inline-block
+      &:first-child
+        margin-right: 100px
+  &__subtitle
+    position: relative
+    z-index: 2
+    @include inter
+    font-style: italic
+    letter-spacing: 0.05em
+    &::after
+      position: absolute
+      content: ''
+      top: 50%
+      right: -65px
+      width: 50px
+      height: 1px
+      background-color: $yellow
