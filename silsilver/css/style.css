@@ -748,7 +748,7 @@ input {
   position: relative;
   z-index: 3;
   padding-top: 148px;
-  padding-bottom: 100px;
+  padding-bottom: 156px;
   background-color: #1C1C1C;
 }
 .reviews__title {
@@ -915,5 +915,102 @@ input {
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
+}
+
+.order {
+  padding-bottom: 95px;
+}
+.order__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-right: 145px;
+}
+.order__head span {
+  margin-top: -32px;
+  margin-right: -9px;
+}
+.order__button {
+  margin-top: -83px;
+  margin-bottom: 122px;
+}
+.order-button {
+  padding: 16px 70px;
+}
+.order__list {
+  border: 2px solid #B69556;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  counter-reset: section;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+.order__list::before {
+  position: absolute;
+  content: "";
+  top: -135px;
+  right: 54px;
+  width: 300px;
+  height: 300px;
+  background: rgba(182, 149, 86, 0.7);
+  z-index: 1;
+  -webkit-filter: blur(110px);
+  filter: blur(110px);
+}
+.order__item {
+  position: relative;
+  width: 531px;
+}
+.order__item::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: "Viaoda";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 0.9;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #B69556;
+  border-radius: 100%;
+  padding: 12px 22px;
+  counter-increment: section;
+  content: counter(section);
+}
+.order__item:nth-child(-n+2) {
+  margin-bottom: 50px;
+}
+.order__item:nth-child(even) {
+  margin-right: -60px;
+}
+.order__title {
+  font-family: "Viaoda";
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 0.9;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+  padding-top: 79px;
+}
+.order__text {
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
