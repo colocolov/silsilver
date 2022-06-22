@@ -25,15 +25,17 @@
       <nav class="menu__body">
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link" href="">Portfolio</a>
+            <a class="menu__link" href="#portfolio">Portfolio</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="">Despre noi</a>
+            <a class="menu__link" href="#about">Despre noi</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="">Avantajele</a>
+            <a class="menu__link" href="#benefits">Avantajele</a>
           </li>
-          <li class="menu__item"><a class="menu__link" href="">Contacte</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contact">Contacte</a>
+          </li>
         </ul>
       </nav>
       <button type="button" class="menu__icon">
@@ -63,7 +65,7 @@
         >Facebook</a
       >
     </div>
-    <div class="first-slider">
+    <div class="first-slider" id="portfolio">
       <div class="swiper-wrapper">
         <div class="swiper-slide first-slider__slide">
           <img class="image first-slider__img" src="images/slide/01.jpg" alt="" />
@@ -96,7 +98,7 @@
     <span class="first__subtitle">portfolio</span>
   </div>
 </section>
- <section class="about">
+ <section class="about" id="about">
   <div class="container">
     <h2 class="heading about__title">
       Despre <span class="about__title-second">noi</span>
@@ -120,7 +122,7 @@
   </div>
 </section>
 
-        <section class="benefits">
+        <section class="benefits" id="benefits">
   <div class="container">
     <h2 class="heading benefits__title">
       Avantajele <span class="benefits__title-second">noastre</span>
@@ -143,7 +145,8 @@
               </div>
             </div>
             <div class="benefits__text">
-              Suntem printre primii pe piața de draperii din Republica Moldova
+              Suntem printre primii pe piața de draperii <br />din Republica
+              <br />Moldova
             </div>
           </div>
         </li>
@@ -294,10 +297,38 @@
     </ul>
   </div>
 </section>
+ <section class="contact" id="contact">
+  <div class="container contact__container">
+    <h2 class="heading contact__head">Con&ndash;tacte</h2>
+    <div class="contact__info">
+      <div class="contact__links">
+        <a href="mailto:silviagolubenco2@gmail.com" class="contact__data"
+          >e-mail: silviagolubenco2@gmail.com</a
+        >
+        <address class="contact__data">adresa: str. Testimiteanu 3/9</address>
+        <a href="tel:+37379551719" class="contact__data"
+          >tel: +373 795 51 719</a
+        >
+      </div>
+      <div class="contact__buttons">
+        <a href="tel:+37379000000" class="btn-reset btn contact__buttons-btn"
+          >Comanda acum</a
+        >
+        <a
+          href="https://facebook.com"
+          class="btn-reset btn btn-fb contact__buttons-btn"
+          >Facebook</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
 
       </main>
       <footer class="footer">
-  <div class="container"></div>
+  <div class="container">
+    <p class="footer__text">ux-reformed</p>
+  </div>
 </footer>
 
     </div>
