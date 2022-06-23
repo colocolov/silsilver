@@ -1,4 +1,19 @@
 // слайдер на главной
+const screenWidth = window.screen.width;
+console.log(screenWidth);
+let quant;
+let dimen;
+
+if (screenWidth < 992) {
+  quant = 1;
+  dimen = 10;
+  // console.log(quant);
+} else {
+  quant = 3.6;
+  dimen = 30;
+}
+// console.log(quant);
+
 const headerSlider = new Swiper(".first-slider", {
   loop: true,
   autoplay: {
@@ -32,9 +47,9 @@ const headerSlider = new Swiper(".first-slider", {
   //   crossFade: true,
   // },
   // показ кол-ва слайдов (работает, когда откл effect: "fade")
-  slidesPerView: 3.6,
+  slidesPerView: quant,
   // расстояние между слайдами
-  spaceBetween: 30,
+  spaceBetween: dimen,
   //отложенная загрузка:
   //отключаем презагрузку картинок
   preloadImages: false,
