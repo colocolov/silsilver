@@ -1,6 +1,6 @@
 // слайдер на главной
 const screenWidth = window.screen.width;
-console.log(screenWidth);
+// console.log(screenWidth);
 let quant;
 let dimen;
 
