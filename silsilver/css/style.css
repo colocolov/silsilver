@@ -907,7 +907,7 @@ input {
 }
 .reviews__btn {
   position: relative;
-  z-index: 2;
+  z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
