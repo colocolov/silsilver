@@ -36,48 +36,28 @@
   &__sliders
     position: relative
     z-index: 5
-    // margin-bottom: 40px
     height: 775px
   &__slide
     position: relative
     z-index: 5
     display: flex
     align-items: flex-start
-    // width: 1082px
-    // margin: 20px auto 75px
-    // padding: 85px 0px
-    // box-shadow: 2px 2px 20px rgba(48, 48, 54, 0.15)
-    // border-radius: 25px
-    // z-index: -1
-    // overflow: hidden
-    // &::after
-    //   content: ''
+    padding-top: 137px
+    padding-bottom: 137px
+    // &-top,
+    // &-bottom
     //   position: absolute
-    //   top: 0
-    //   bottom: 0
-    //   right: 0
     //   left: 0
-    //   background: $bgc url(../images/bg/bg-reviews.jpg) no-repeat center / cover
-    //   opacity: 0.2
-    &-active
-      align-self: center
-      height: 500px
-      .reviews__slide
-        justify-content: flex-end
-    &-top,
-    &-bottom
-      position: absolute
-      left: 0
-      height: 350px
-      z-index: -1
-      .reviews__avatar
-        flex: 0 0 250px
-        height: 350px
-        width: 250px
-      .reviews__author
-        padding-left: 7px
-        &::before
-          left: -106px
+    //   height: 350px
+    //   z-index: -1
+    //   .reviews__avatar
+    //     flex: 0 0 250px
+    //     height: 350px
+    //     width: 250px
+    //   .reviews__author
+    //     padding-left: 7px
+    //     &::before
+    //       left: -106px
     &-top
       top: 0
       .reviews__message
@@ -94,14 +74,36 @@
     width: 350px
     height: 500px
     margin-right: 47px
-    // border-radius: 25px
+    padding-left: 158px
     z-index: 2
-    // overflow: hidden
+    &-main
+      position: relative
+      // padding-left: 150px
+      z-index: 7
+    &-top
+      position: absolute
+      top: -137px
+      left: 5px
+      width: 250px
+      height: 350px
+      z-index: 1
+      overflow: hidden
+      filter: blur(2px)
+    &-bottom
+      position: absolute
+      bottom: -137px
+      left: 5px
+      width: 250px
+      height: 350px
+      z-index: -1
+      // overflow: hidden
+      filter: blur(2px)
   &__message
     // z-index: 4
     width: 685px
   &__text
     // margin-bottom: 20px
+    display: none
     padding-right: 56px
     color: $grey
     font-family: 'Viaoda'
@@ -110,6 +112,7 @@
     line-height: 0.9
     letter-spacing: 0.05em
     margin-bottom: 27px
+
   &__author
     position: relative
     letter-spacing: 0.05em
@@ -145,3 +148,22 @@
     margin-right: 60px
     img
       transform: rotate(-90deg)
+
+  .swiper
+    // &-container
+    //   // padding: 100px 0
+    // &-slide
+    //   // opacity: 0.5
+    //   transition: 0.5s
+    //   // background-color: green
+    &-slide-active
+      opacity: 1
+      transition: 0.5s
+      // transform: scale(1.2)
+      & .reviews__text
+        display: block !important
+
+.swiper-pagination-bullet
+  width: 15px
+  height: 15px
+  background-color: #fff
