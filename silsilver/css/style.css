@@ -813,6 +813,9 @@ input {
   align-items: flex-start;
   padding-top: 137px;
   padding-bottom: 137px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 .reviews__slide-top {
   top: 0;
@@ -927,6 +930,11 @@ input {
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
+}
+.reviews .swiper-slide {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 .reviews .swiper-slide-active {
   opacity: 1;
