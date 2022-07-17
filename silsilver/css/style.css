@@ -177,6 +177,9 @@ input {
   padding: 9px 92px;
   color: #FDE4C3;
   text-transform: uppercase;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .btn-fb {
@@ -1127,6 +1130,160 @@ input {
   color: #FFFFFF;
 }
 
+@media (min-width: 992px) {
+  .btn:hover {
+    background-color: rgba(253, 228, 195, 0.8);
+    color: #1C1C1C;
+    border: 3px solid rgba(253, 228, 195, 0.8);
+  }
+  .btn-light:hover {
+    background-color: #B69556;
+    color: #FFFFFF;
+    border: 3px solid #B69556;
+  }
+}
+@media (min-width: 992px) {
+  .benefits__descr::after {
+    -webkit-animation: heros 80s infinite linear;
+    animation: heros 80s infinite linear;
+  }
+  .benefits__arrow {
+    -webkit-animation: move-down 5s infinite linear;
+    animation: move-down 5s infinite linear;
+  }
+  .reviews__arrow {
+    -webkit-animation: move-right 5s infinite linear;
+    animation: move-right 5s infinite linear;
+  }
+}
+@-webkit-keyframes heros {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@keyframes heros {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes circle {
+  0% {
+    -webkit-transform: translate(98px, -300px) rotate(0deg) scale(1);
+    transform: translate(98px, -300px) rotate(0deg) scale(1);
+  }
+  100% {
+    -webkit-transform: translate(98px, -300px) rotate(360deg) scale(1);
+    transform: translate(98px, -300px) rotate(360deg) scale(1);
+  }
+}
+@keyframes circle {
+  0% {
+    -webkit-transform: translate(98px, -300px) rotate(0deg) scale(1);
+    transform: translate(98px, -300px) rotate(0deg) scale(1);
+  }
+  100% {
+    -webkit-transform: translate(98px, -300px) rotate(360deg) scale(1);
+    transform: translate(98px, -300px) rotate(360deg) scale(1);
+  }
+}
+@-webkit-keyframes move-down {
+  0% {
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+  30% {
+    -webkit-transform: translate(0px, 100px) scale(1.1);
+    transform: translate(0px, 100px) scale(1.1);
+  }
+  45% {
+    -webkit-transform: translate(0px, 70px) scale(1.1);
+    transform: translate(0px, 70px) scale(1.1);
+  }
+  70% {
+    -webkit-transform: translate(0px, 100px) scale(1.1);
+    transform: translate(0px, 100px) scale(1.1);
+  }
+  100% {
+    -webkit-transform: translate(0px, 90px) scale(1.1);
+    transform: translate(0px, 90px) scale(1.1);
+  }
+}
+@keyframes move-down {
+  0% {
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+  30% {
+    -webkit-transform: translate(0px, 100px) scale(1.1);
+    transform: translate(0px, 100px) scale(1.1);
+  }
+  45% {
+    -webkit-transform: translate(0px, 70px) scale(1.1);
+    transform: translate(0px, 70px) scale(1.1);
+  }
+  70% {
+    -webkit-transform: translate(0px, 100px) scale(1.1);
+    transform: translate(0px, 100px) scale(1.1);
+  }
+  100% {
+    -webkit-transform: translate(0px, 90px) scale(1.1);
+    transform: translate(0px, 90px) scale(1.1);
+  }
+}
+@-webkit-keyframes move-right {
+  0% {
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+  30% {
+    -webkit-transform: translate(50px, 0px) scale(1.1);
+    transform: translate(50px, 0px) scale(1.1);
+  }
+  45% {
+    -webkit-transform: translate(30px, 0px) scale(1.1);
+    transform: translate(30px, 0px) scale(1.1);
+  }
+  70% {
+    -webkit-transform: translate(50px, 0px) scale(1.1);
+    transform: translate(50px, 0px) scale(1.1);
+  }
+  100% {
+    -webkit-transform: translate(45px, 0px) scale(1.1);
+    transform: translate(45px, 0px) scale(1.1);
+  }
+}
+@keyframes move-right {
+  0% {
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+  30% {
+    -webkit-transform: translate(50px, 0px) scale(1.1);
+    transform: translate(50px, 0px) scale(1.1);
+  }
+  45% {
+    -webkit-transform: translate(30px, 0px) scale(1.1);
+    transform: translate(30px, 0px) scale(1.1);
+  }
+  70% {
+    -webkit-transform: translate(50px, 0px) scale(1.1);
+    transform: translate(50px, 0px) scale(1.1);
+  }
+  100% {
+    -webkit-transform: translate(45px, 0px) scale(1.1);
+    transform: translate(45px, 0px) scale(1.1);
+  }
+}
 @media (max-width: 1300px) {
   .benefits__title {
     margin-left: 0;
