@@ -1,9 +1,17 @@
 @media ( min-width: 992px )
+  .menu__item:hover
+    &::before
+      width: 100%
+    &:last-child a
+      color: $gold
+
   .btn:hover
+    border: 3px solid rgba($yellow, 0.8)
     background-color: rgba($yellow, 0.8)
     color: $bgc
-    border: 3px solid rgba($yellow, 0.8)
+  .btn:hover::before
+    height: 500%
   .btn-light:hover
+    border: 3px solid $gold
     background-color: $gold
     color: $white
-    border: 3px solid $gold

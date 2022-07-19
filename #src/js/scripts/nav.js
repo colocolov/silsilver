@@ -1,24 +1,5 @@
 // мобильное меню
 
-//выпадающее меню для мобильных устройств
-// document.addEventListener("click", documentActions);
-
-// function documentActions(e) {
-//   const targetElement = e.target;
-//   if (window.innerWidth > 900) {
-//     if (targetElement.classList.contains("menu__arrow")) {
-//       targetElement.closest(".menu__item").classList.toggle("_hover");
-//     }
-//     if (
-//       !targetElement.closest(".menu__item") &&
-//       document.querySelectorAll(".menu__item._hover").length > 0
-//     ) {
-//       // console.log("ehhh");
-//       // _removeClasses(document.querySelectorAll(".menu__item._hover"), "_hover");
-//     }
-//   }
-// }
-
 // проверка, является ли уствройство мобильным
 const isMobile = {
   Android: function () {
@@ -66,7 +47,6 @@ if (iconMenu) {
 // закрытие при клике
 menuLink.forEach((item) => {
   item.addEventListener("click", () => {
-    console.log("yes");
     document.body.classList.remove("_lock");
     iconMenu.classList.remove("_active");
     menuBody.classList.remove("_active");

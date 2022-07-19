@@ -14,7 +14,7 @@ let path = {
   src: {
     html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
     css: source_folder + "/sass/style.sass",
-    cssadd: source_folder + "/css/libs.scss",
+    cssadd: source_folder + "/css/*.css",
     js: source_folder + "/js/scripts/*.js",
     jsadd: [source_folder + "/js/l-ibs.js"],
     images: source_folder + "/images/**/*.{jpg,png,svg,gif,ico,webp}",
@@ -90,22 +90,24 @@ function html() {
 
 // build version html
 function htmlBuild() {
-  return src(path.src.html)
-    .pipe(
-      fileinclude({
-        prefix: "@",
-        basepath: "@file",
-      })
-    )
-    .pipe(replace(/@img\//g, "images/"))
-    .pipe(webphtml())
-    .pipe(
-      htmlmin({
-        // collapseWhitespace: true, // удаляем все переносы
-        removeComments: true, // удаляем все комментарии
-      })
-    )
-    .pipe(dest(path.build.html));
+  return (
+    src(path.src.html)
+      .pipe(
+        fileinclude({
+          prefix: "@",
+          basepath: "@file",
+        })
+      )
+      .pipe(replace(/@img\//g, "images/"))
+      // .pipe(webphtml())
+      .pipe(
+        htmlmin({
+          // collapseWhitespace: true, // удаляем все переносы
+          removeComments: true, // удаляем все комментарии
+        })
+      )
+      .pipe(dest(path.build.html))
+  );
 }
 
 function css() {
