@@ -1,0 +1,13 @@
+.social
+  margin-left: 100px
+  &__item
+    &:not(:last-child)
+      margin-right: 30px
+    &::before
+      content: none
+  &__img
+    width: 25px
+    height: 25px
+    fill: $gold
+    object-fit: cover
+    transition: fill 0.3s ease-in-out

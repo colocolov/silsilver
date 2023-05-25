@@ -10,17 +10,37 @@
     width: 100%
     z-index: 7
     background-color: rgba($black, 0.2)
-    // backdrop-filter: blur(3px)
 
   .menu
     padding-left: 0
     padding-right: 0
   .menu__body
+    flex-direction: column
+    align-items: flex-end
+    justify-content: flex-start
     padding: 150px 15px 50px 15px
+  .menu__phone
+    margin-right: 35px
   .menu__item
     padding-right: 3px
+  .menu__item:not(:last-child)
+    margin-right: 35px
   .menu__item:last-child a
     margin-left: 0
+
+  .social
+    flex-direction: row
+    margin-left: 0
+    align-items: center
+    &__item
+      margin-bottom: 20px
+      margin-right: 30px
+    &__phone
+      display: none
+    &__img
+      width: 35px
+      height: 35px
+
   .heading
     font-size: 100px
 
